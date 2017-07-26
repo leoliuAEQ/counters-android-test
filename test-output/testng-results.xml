@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="16950" started-at="2017-07-20T19:37:34Z" finished-at="2017-07-20T19:37:51Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="16950" started-at="2017-07-20T19:37:34Z" finished-at="2017-07-20T19:37:51Z">
+      <class name="com.test.CountersTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.CountersTest@3abbfa04]" name="setUp" is-config="true" duration-ms="7411" started-at="2017-07-20T12:37:34Z" finished-at="2017-07-20T12:37:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCounters()[pri:0, instance:com.test.CountersTest@3abbfa04]" name="testCounters" duration-ms="8348" started-at="2017-07-20T12:37:42Z" finished-at="2017-07-20T12:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCounters -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.CountersTest@3abbfa04]" name="tearDown" is-config="true" duration-ms="1174" started-at="2017-07-20T12:37:50Z" finished-at="2017-07-20T12:37:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.CountersTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
