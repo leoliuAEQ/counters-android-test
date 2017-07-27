@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.AssertJUnit;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidElement;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -22,7 +24,7 @@ import static org.testng.Assert.assertTrue;
  * Created by user on 2017-06-28.
  */
 public class CountersTest {
-    protected AppiumDriver driver;
+    protected AppiumDriver<AndroidElement> driver;
 
  
 	
