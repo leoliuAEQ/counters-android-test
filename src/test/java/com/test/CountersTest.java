@@ -22,7 +22,7 @@ import static org.testng.Assert.assertTrue;
  * Created by user on 2017-06-28.
  */
 public class CountersTest {
-    protected RemoteWebDriver driver;
+    protected AppiumDriver driver;
 
  
 	
@@ -33,7 +33,7 @@ public class CountersTest {
         desiredCaps.setCapability("deviceName", "Pixel_API_25");
         //this is not the current version of this file. This is not a git repo?
         desiredCaps.setCapability("app", Paths.get("app-debug.apk").toAbsolutePath().toString());
-        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCaps);
+        driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCaps);
     }
 
   
@@ -46,8 +46,8 @@ public class CountersTest {
 	@Test
 	public void testCounters() {
 		for (int i = 1; i <= 10; i++) {
-			//driver.findElementByAccessibilityId("Add").click();
-			driver.findElement(By.id("Add")).click();
+			driver.findElementByAccessibilityId("Add").click();
+			//driver.findElement(By.id("Add")).click();
 			AssertJUnit.assertTrue(driver.findElement(By.id("android:id/text1")).isDisplayed());
 		}
 	}
