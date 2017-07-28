@@ -58,7 +58,11 @@ public class CountersTest {
 			//driver.findElementByAccessibilityId("Add").click();
 			System.out.println("element clicking on add button "+i);
 			//driver.findElement(By.xpath("//android.widget.Button")).click();
-						driver.findElement(By.id("Add")).click();
+						//driver.findElement(By.id("Add")).click();
+						//driver.findElement(By.name("Add")).click();
+
+
+						driver.findElement(By.xpath("//*[@content-desc='Add']")).click();
 			//AssertJUnit.assertTrue(driver.findElement(By.id("android:id/text1")).isDisplayed());
 		}
 	}
