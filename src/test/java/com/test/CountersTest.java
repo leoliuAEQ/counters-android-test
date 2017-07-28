@@ -31,16 +31,16 @@ import static org.testng.Assert.assertTrue;
  * Created by user on 2017-06-28.
  */
 public class CountersTest {
-    protected AndroidDriver driver;
+    protected RemoteWebDriver driver;
 
  	@BeforeMethod(alwaysRun = true)
     public void setUp() throws MalformedURLException {
         DesiredCapabilities desiredCaps = new DesiredCapabilities();
         desiredCaps.setCapability("platformName", "android");
-        desiredCaps.setCapability("deviceName", "android Emulator");
+        desiredCaps.setCapability("deviceName", "Pixel_XL_API_24");
         //this is not the current version of this file. This is not a git repo?
         desiredCaps.setCapability("app", Paths.get("app-debug.apk").toAbsolutePath().toString());
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCaps);
+        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCaps);
         System.out.println("Appium Driver started succussfully");
     }
 
