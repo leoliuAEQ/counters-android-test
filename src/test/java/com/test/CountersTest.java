@@ -55,9 +55,10 @@ public class CountersTest {
 	public void testCounters() throws InterruptedException {
 		
 		for (int i = 1; i <= 10; i++) {
-			driver.findElementByAccessibilityId("Add").click();
+			//driver.findElementByAccessibilityId("Add").click();
 			System.out.println("element clicking on add button "+i);
-						//driver.findElement(By.id("Add")).click();
+			//driver.findElement(By.xpath("//android.widget.Button")).click();
+						driver.findElement(By.id("Add")).click();
 			//AssertJUnit.assertTrue(driver.findElement(By.id("android:id/text1")).isDisplayed());
 		}
 	}
