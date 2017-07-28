@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.AssertJUnit;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
 import org.openqa.selenium.By;
@@ -30,16 +31,16 @@ import static org.testng.Assert.assertTrue;
  * Created by user on 2017-06-28.
  */
 public class CountersTest {
-    protected AppiumDriver driver;
+    protected AndroidDriver driver;
 
  	@BeforeMethod(alwaysRun = true)
     public void setUp() throws MalformedURLException {
         DesiredCapabilities desiredCaps = new DesiredCapabilities();
         desiredCaps.setCapability("platformName", "android");
-        desiredCaps.setCapability("deviceName", "Pixel_API_25");
+        desiredCaps.setCapability("deviceName", "android Emulator");
         //this is not the current version of this file. This is not a git repo?
         desiredCaps.setCapability("app", Paths.get("app-debug.apk").toAbsolutePath().toString());
-        driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCaps);
+        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCaps);
         System.out.println("Appium Driver started succussfully");
     }
 
