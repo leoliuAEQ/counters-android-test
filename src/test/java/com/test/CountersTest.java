@@ -27,7 +27,7 @@ import static org.testng.Assert.assertTrue;
  * Created by user on 2017-06-28.
  */
 public class CountersTest {
-    protected AppiumDriver<AndroidElement> driver;
+    protected RemoteWebDriver driver;
 
  
 	
@@ -39,7 +39,7 @@ public class CountersTest {
         desiredCaps.setCapability("deviceName", "Pixel_API_25");
         //this is not the current version of this file. This is not a git repo?
         desiredCaps.setCapability("app", Paths.get("app-debug.apk").toAbsolutePath().toString());
-        driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCaps);
+        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCaps);
         System.out.println("Appium Driver started succussfully");
     }
 

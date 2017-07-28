@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="22489" started-at="2017-07-26T02:34:38Z" finished-at="2017-07-26T02:35:00Z">
+  <suite name="Suite" duration-ms="14108" started-at="2017-07-28T05:20:51Z" finished-at="2017-07-28T05:21:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="22489" started-at="2017-07-26T02:34:38Z" finished-at="2017-07-26T02:35:00Z">
+    <test name="Test" duration-ms="14108" started-at="2017-07-28T05:20:51Z" finished-at="2017-07-28T05:21:05Z">
       <class name="com.test.CountersTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.CountersTest@60addb54]" name="setUp" is-config="true" duration-ms="10707" started-at="2017-07-25T19:34:38Z" finished-at="2017-07-25T19:34:48Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.CountersTest@3cbbc1e0]" name="setUp" is-config="true" duration-ms="5091" started-at="2017-07-27T22:20:51Z" finished-at="2017-07-27T22:20:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCounters()[pri:0, instance:com.test.CountersTest@60addb54]" name="testCounters" duration-ms="10148" started-at="2017-07-25T19:34:48Z" finished-at="2017-07-25T19:34:58Z">
+        <test-method status="PASS" signature="testCounters()[pri:0, instance:com.test.CountersTest@3cbbc1e0]" name="testCounters" duration-ms="7773" started-at="2017-07-27T22:20:56Z" finished-at="2017-07-27T22:21:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCounters -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.CountersTest@60addb54]" name="tearDown" is-config="true" duration-ms="1610" started-at="2017-07-25T19:34:58Z" finished-at="2017-07-25T19:35:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.CountersTest@3cbbc1e0]" name="tearDown" is-config="true" duration-ms="1223" started-at="2017-07-27T22:21:04Z" finished-at="2017-07-27T22:21:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
