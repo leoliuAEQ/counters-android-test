@@ -5,6 +5,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
@@ -29,10 +32,7 @@ import static org.testng.Assert.assertTrue;
 public class CountersTest {
     protected RemoteWebDriver driver;
 
- 
-	
-	
-	@BeforeMethod(alwaysRun = true)
+ 	@BeforeMethod(alwaysRun = true)
     public void setUp() throws MalformedURLException {
         DesiredCapabilities desiredCaps = new DesiredCapabilities();
         desiredCaps.setCapability("platformName", "android");
@@ -43,9 +43,6 @@ public class CountersTest {
         System.out.println("Appium Driver started succussfully");
     }
 
-  
-	
-	
 	@AfterMethod(alwaysRun = true)
     public void tearDown() {
         driver.quit();
@@ -58,11 +55,11 @@ public class CountersTest {
 			//driver.findElementByAccessibilityId("Add").click();
 			System.out.println("element clicking on add button "+i);
 			//driver.findElement(By.xpath("//android.widget.Button")).click();
-						//driver.findElement(By.id("Add")).click();
+						driver.findElement(By.id("Add")).click();
 						//driver.findElement(By.name("Add")).click();
 
 
-						driver.findElement(By.xpath("//*[@content-desc='Add']")).click();
+						//driver.findElement(By.xpath("//*[@content-desc='Add']")).click();
 			//AssertJUnit.assertTrue(driver.findElement(By.id("android:id/text1")).isDisplayed());
 		}
 	}
