@@ -2,6 +2,9 @@ package com.test;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
@@ -28,6 +31,7 @@ public class CountersTest {
 
  
 	
+	
 	@BeforeMethod(alwaysRun = true)
     public void setUp() throws MalformedURLException {
         DesiredCapabilities desiredCaps = new DesiredCapabilities();
@@ -41,6 +45,7 @@ public class CountersTest {
 
   
 	
+	
 	@AfterMethod(alwaysRun = true)
     public void tearDown() {
         driver.quit();
@@ -48,13 +53,12 @@ public class CountersTest {
 
 	@Test
 	public void testCounters() throws InterruptedException {
-		Thread.sleep(3000);
+		
 		for (int i = 1; i <= 10; i++) {
 			driver.findElementByAccessibilityId("Add").click();
 			System.out.println("element clicking on add button "+i);
-			Thread.sleep(3000);
-			//driver.findElement(By.id("Add")).click();
-			AssertJUnit.assertTrue(driver.findElement(By.id("android:id/text1")).isDisplayed());
+						//driver.findElement(By.id("Add")).click();
+			//AssertJUnit.assertTrue(driver.findElement(By.id("android:id/text1")).isDisplayed());
 		}
 	}
 }
